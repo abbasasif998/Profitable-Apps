@@ -27,15 +27,15 @@ As we mentioned in the introduction, our aim is to determine the kinds of apps t
 
 To minimize risks and overhead, our validation strategy for an app idea is comprised of three steps:
 
-Build a minimal Android version of the app, and add it to Google Play.
-If the app has a good response from users, we then develop it further.
-If the app is profitable after six months, we also build an iOS version of the app and add it to the App Store.
+1. Build a minimal Android version of the app, and add it to Google Play.
+2. If the app has a good response from users, we then develop it further.
+3. If the app is profitable after six months, we also build an iOS version of the app and add it to the App Store.
 Because our end goal is to add the app on both the App Store and Google Play, we need to find app profiles that are successful on both markets. For instance, a profile that might work well for both markets might be a productivity app that makes use of gamification.
 
-Let's begin the analysis by getting a sense of the most common genres for each market. For this, we'll build a frequency table for the prime_genre column of the App Store data set, and the Genres and Category columns of the Google Play data set.
+We began the analysis by getting a sense of the most common genres for each market. For this, we constructed a frequency table for the prime_genre column of the App Store data set, and the Genres and Category columns of the Google Play data set.
 
-Part Two
-We'll build two functions we can use to analyze the frequency tables:
+#### Part Two
+We defined two functions we can use to analyze the frequency tables:
 
-One function to generate frequency tables that show percentages
-Another function that we can use to display the percentages in a descending order
+* One function to generate frequency tables that show percentages
+* Another function that we can use to display the percentages in a descending order
