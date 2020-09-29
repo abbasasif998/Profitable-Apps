@@ -10,3 +10,12 @@ Collecting data for over four million apps requires a significant amount of time
 
 * [A data set](https://www.kaggle.com/lava18/google-play-store-apps) containing data about approximately ten thousand Android apps from Google Play. You can download the data set directly from [this link](https://dq-content.s3.amazonaws.com/350/googleplaystore.csv).
 * [A data set](https://www.kaggle.com/ramamet4/app-store-apple-data-set-10k-apps) containing data about approximately seven thousand iOS apps from the App Store. You can download the data set directly from [this link](https://dq-content.s3.amazonaws.com/350/AppleStore.csv).
+
+## Opening and Exploring Data
+Opening both .csv using open() command and reading it. For easily exploring the dataset we defined a function explore_data that printed components of each row and leaving a gap line between two rows.
+
+## Cleaning and Preprocessing Data
+* On exploring the data we found there were some rows with wrong information so we deleted the row with wrong data entry.
+* Some apps were repeated in the Google Play Store Dataset whereas IOS AppStore Dataset was free of this duplicacy of Data. To tackle this we used the Data which was recent (meaning which had the maximum number of reviews).
+* Our company primarily focuses on free apps. But both the Dataset contained Paid Apps also. So extracted the Data of all the free apps from both the Dataset.
+* There were some Non-English apps also keeping in mind our company specifically targets english speaking audience. We applied Algorithms to extract of all the apps which had a English Name. 
