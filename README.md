@@ -19,3 +19,23 @@ Opening both .csv using open() command and reading it. For easily exploring the 
 * Some apps were repeated in the Google Play Store Dataset whereas IOS AppStore Dataset was free of this duplicacy of Data. To tackle this we used the Data which was recent (meaning which had the maximum number of reviews).
 * Our company primarily focuses on free apps. But both the Dataset contained Paid Apps also. So extracted the Data of all the free apps from both the Dataset.
 * There were some Non-English apps also keeping in mind our company specifically targets english speaking audience. We applied Algorithms to extract of all the apps which had a English Name. 
+
+## Transforming and Analysing Data
+### Most Common Apps by Genre
+#### Part One
+As we mentioned in the introduction, our aim is to determine the kinds of apps that are likely to attract more users because our revenue is highly influenced by the number of people using our apps.
+
+To minimize risks and overhead, our validation strategy for an app idea is comprised of three steps:
+
+Build a minimal Android version of the app, and add it to Google Play.
+If the app has a good response from users, we then develop it further.
+If the app is profitable after six months, we also build an iOS version of the app and add it to the App Store.
+Because our end goal is to add the app on both the App Store and Google Play, we need to find app profiles that are successful on both markets. For instance, a profile that might work well for both markets might be a productivity app that makes use of gamification.
+
+Let's begin the analysis by getting a sense of the most common genres for each market. For this, we'll build a frequency table for the prime_genre column of the App Store data set, and the Genres and Category columns of the Google Play data set.
+
+Part Two
+We'll build two functions we can use to analyze the frequency tables:
+
+One function to generate frequency tables that show percentages
+Another function that we can use to display the percentages in a descending order
